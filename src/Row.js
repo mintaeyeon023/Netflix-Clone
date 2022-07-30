@@ -11,7 +11,7 @@ function Row({ title, fetchUrl }) {
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(fetchUrl);
-            // console.log("re");
+            console.log("request");
             setMovies(request.data.results);
             
             return request;
@@ -20,9 +20,7 @@ function Row({ title, fetchUrl }) {
     }, [fetchUrl]);
 
     //console.log(movies);
-    console.log("https://api.themoviedb.org/3/movie/550?api_key=fecba95dc258b08f5b81fec41f195064");
-
-    
+    //console.log("https://api.themoviedb.org/3/movie/550?api_key=fecba95dc258b08f5b81fec41f195064");
 
     return (
         <div className="row">

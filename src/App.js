@@ -7,11 +7,10 @@ function App() {
   return (
     <div className="App">
       <h1>NETFLIX-CLONE</h1>
-      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} />
+      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchActionMovies} />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
     </div>
   );
 }
-
 
 export default App;

@@ -5,7 +5,7 @@ import axios from "axios";
 // https://api.themoviedb.org/3/discover/movie?api_key=fecba95dc258b08f5b81fec41f195064&&with_genres=27
 
 const instance = axios.create({
-    baseURL: "https://api.themoviedb.org/3"
+    baseURL: "https://api.themoviedb.org/3",
 });
 
 // DEMO Call API call for GET()
